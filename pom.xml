@@ -6,7 +6,11 @@
 
     <groupId>com.xdorg1</groupId>
     <artifactId>hudi-start</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hudi-learning</module>
+    </modules>
 
 
 </project>
