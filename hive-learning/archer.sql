@@ -1,4 +1,7 @@
+-- hive HQL operation demo on 王者荣耀 data
+
 --创建数据库并切换使用
+
 create database oldlu;
 use oldlu;
 --ddl create table

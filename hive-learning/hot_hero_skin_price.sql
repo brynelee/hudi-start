@@ -1,3 +1,5 @@
+-- hive HQL operation demo on 王者荣耀 data
+
 use oldlu;
 
 create table t_hot_hero_skin_price(
