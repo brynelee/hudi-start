@@ -81,7 +81,7 @@ object MockOrderProducer {
           producer.send(record)
         }
         println(s"=============Batch Size: ", batchNumber, "===================")
-        Thread.sleep(random.nextInt(2000) )
+        Thread.sleep(random.nextInt(8000) )
       }
     } catch {
       case e: Exception => e.printStackTrace()
