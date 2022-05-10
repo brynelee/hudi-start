@@ -59,6 +59,7 @@ object HudiStructuredDemo {
       .queryName("query-hudi-streaming")
       .foreachBatch((batchDF: Dataset[Row], batchId: Long) => {
         println(s"============== BatchId: ${batchId} start ==============")
+        println(s"===============Batch Count: ", batchDF.count(), s"=============")
         import org.apache.hudi.DataSourceWriteOptions._
         import org.apache.hudi.config.HoodieWriteConfig._
         import org.apache.hudi.keygen.constant.KeyGeneratorOptions._
