@@ -54,12 +54,13 @@ object MockOrderProducer {
 
       // 随机数实例对象
       val random: Random = new Random()
+
       // 订单状态：订单打开 0，订单取消 1，订单关闭 2，订单完成 3
       val allStatus = Array(0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
       while (true) {
         // 每次循环 模拟产生的订单数目
-        val batchNumber: Int = random.nextInt(1) + 100
+        val batchNumber = random.nextInt(100) + 10
         (1 to batchNumber).foreach { number =>
           val currentTime: Long = System.currentTimeMillis()
           val orderId: String = s"${getDate(currentTime)}%06d".format(number)
@@ -79,7 +80,8 @@ object MockOrderProducer {
           // 5. 发送数据：def send(messages: KeyedMessage[K,V]*), 将数据发送到Topic
           producer.send(record)
         }
-        Thread.sleep(random.nextInt(500) )
+        println(s"=============Batch Size: ", batchNumber, "===================")
+        Thread.sleep(random.nextInt(2000) )
       }
     } catch {
       case e: Exception => e.printStackTrace()
