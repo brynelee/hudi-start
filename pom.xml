@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hudi-learning</module>
+        <module>flink-kafka-hudi</module>
     </modules>
 
 
