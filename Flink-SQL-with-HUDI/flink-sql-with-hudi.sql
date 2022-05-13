@@ -1,3 +1,6 @@
+# 使用Flink sql-client.sh 来借助hudi connector来操作hudi表，进行SQL数据操作。
+# 数据存储在HDFS
+
 # 在SQL Client命令行提示符环境，设置结果展示方式
 
 set execution.result-mode=tableau;
