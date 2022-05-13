@@ -60,7 +60,7 @@ object MockOrderProducer {
 
       while (true) {
         // 每次循环 模拟产生的订单数目
-        val batchNumber = random.nextInt(100) + 10
+        val batchNumber = random.nextInt(5) + 5
         (1 to batchNumber).foreach { number =>
           val currentTime: Long = System.currentTimeMillis()
           val orderId: String = s"${getDate(currentTime)}%06d".format(number)
