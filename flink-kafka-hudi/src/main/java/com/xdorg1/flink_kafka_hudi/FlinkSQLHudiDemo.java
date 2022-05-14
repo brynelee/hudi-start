@@ -74,7 +74,8 @@ public class FlinkSQLHudiDemo {
                         "PARTITIONED BY (partition_day)\n" +
                         "WITH (\n" +
                         "    'connector' = 'hudi',\n" +
-                        "    'path' = 'file:///D:/tmp/flink_hudi_order',\n" +
+                        //"    'path' = 'file:///D:/tmp/flink_hudi_order',\n" +
+                        "    'path' = 'hdfs://spark-master:9000/users_sink_hudi_hive_codetest',\n" +
                         "    'table.type' = 'MERGE_ON_READ',\n" +
                         "    'write.operation' = 'upsert',\n" +
                         "    'hoodie.datasource.write.recordkey.field'= 'orderId',\n" +
