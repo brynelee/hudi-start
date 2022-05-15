@@ -148,6 +148,8 @@
         </dependency>
 
 
+
+
     </dependencies>
 
     <build>
@@ -185,6 +187,7 @@
             </plugin>
 
             <!-- Below added by Xiaodong for Scala Unit Test -->
+
             <plugin>
                 <groupId>org.scalatest</groupId>
                 <artifactId>scalatest-maven-plugin</artifactId>
@@ -203,6 +206,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+
         </plugins>
         <testSourceDirectory>${basedir}/src/test/scala</testSourceDirectory>
 
