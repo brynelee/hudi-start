@@ -12,6 +12,7 @@
         <module>hudi-learning</module>
         <module>flink-kafka-hudi</module>
         <module>hudi-momo</module>
+        <module>hudi_itcast_nev</module>
     </modules>
 
 
